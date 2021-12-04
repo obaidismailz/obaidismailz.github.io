@@ -936,8 +936,10 @@ function ShowNotification()
 
     // deafult granted denied
 console.log(Notification.permission);
-
-if(Notification.permission === "granted")
+if (!("Notification" in window)) {
+    // alert("This browser does not support desktop notification");
+  }
+else if(Notification.permission === "granted")
 {
    ShowNotification();
 }
