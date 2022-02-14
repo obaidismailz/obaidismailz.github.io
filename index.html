@@ -67,6 +67,8 @@ img:hover
 }
 
 
+
+
 .qod{
         background-color: #ccc;
         border-radius: 20px;
@@ -97,6 +99,10 @@ img:hover
         Time Table
         <BR>
         BSSE-VI-B    
+        <br>
+        <button onclick="myFunctionAI()">AI</button>
+        <button onclick="myFunctionboth()">Both</button>
+        <button onclick="myFunctionAgent()">Agent</button>
 
     </h1>
 </header>
@@ -105,6 +111,8 @@ img:hover
 <body>
 
     <div class="qod"> </div>
+
+   
 
  <table>
 
@@ -180,7 +188,9 @@ img:hover
 
           <td>
 
-            Information Security
+           
+
+                Information Security
             <br>
             
             CT-406
@@ -189,6 +199,11 @@ img:hover
 
             <br>
             <b id="TName">Dr Ehtisham</b>
+
+
+          
+
+            
 
           </td>
 
@@ -209,6 +224,9 @@ img:hover
             </td>
 
             <td  >
+
+                <div id="AI1">
+              
                 Artificial Intelligence
                 <br>
                 
@@ -219,6 +237,7 @@ img:hover
                 <br>
                 <b id="TName">Dr. Abdul Haleem Butt</b>
 
+            </div>
 
             </td>
 
@@ -243,15 +262,21 @@ img:hover
 
             <td>
 
-               Agent Based
-                                <BR>
-                                Software Engineering
-                                <br>
-                                
-                               CT-406
-                               <img src="6BIMG/Adnan.jfif" >
-                                <br>
-                                <b id="TName">Mr Adnan </b>
+                <div id="agent1">
+                    Agent Based
+                    <BR>
+                    Software Engineering
+                    <br>
+                    
+                   CT-406
+                   <img src="6BIMG/Adnan.jfif" >
+                    <br>
+                    <b id="TName">Mr Adnan </b>
+
+
+                </div>
+
+              
             </td>
 
 
@@ -315,28 +340,36 @@ img:hover
                 
                 
                             <td >
-                                Artificial Intelligence
-                                <br>
-                                
-                                
-                                CT-406
-                                <img src="6BIMG/h.jpg" >
-                
-                                <br>
-                                <b id="TName">Dr. Abdul Haleem Butt</b>
+                                <div id="AI2">
+              
+                                    Artificial Intelligence
+                                    <br>
+                                    
+                    
+                                    CT-407
+                                    <img src="6BIMG/h.jpg" >
+                    
+                                    <br>
+                                    <b id="TName">Dr. Abdul Haleem Butt</b>
+                    
+                                </div>
                                 
                             </td>
                
                             <td >
-                                Artificial Intelligence
-                                <br>
-                                
-                                
-                                CT-406
-                                <img src="6BIMG/h.jpg" >
-                
-                                <br>
-                                <b id="TName">Dr. Abdul Haleem Butt</b>
+                                <div id="AI3">
+              
+                                    Artificial Intelligence
+                                    <br>
+                                    
+                    
+                                    CT-407
+                                    <img src="6BIMG/h.jpg" >
+                    
+                                    <br>
+                                    <b id="TName">Dr. Abdul Haleem Butt</b>
+                    
+                                </div>
                             </td>
                 
                 
@@ -445,15 +478,19 @@ img:hover
                  
                              <td>
                        
-                                Agent Based
-                                <BR>
-                                Software Engineering
-                                <br>
-                                
-                               CT-406
-                               <img src="6BIMG/adnan 2.jpg" >
-                                <br>
-                                <b id="TName">Mr Adnan </b>
+                                <div id="agent2">
+                                    Agent Based
+                                    <BR>
+                                    Software Engineering
+                                    <br>
+                                    
+                                   CT-406
+                                   <img src="6BIMG/adnan 2.jpg" >
+                                    <br>
+                                    <b id="TName">Mr Adnan </b>
+                
+                
+                                </div>
                          
                          
                                      </td>
@@ -461,15 +498,19 @@ img:hover
                  
                                      <td>
                        
-                                        Agent Based
-                                        <BR>
-                                        Software Engineering
-                                        <br>
-                                        
-                                       CT-406
-                                       <img src="6BIMG/adnan 3.jpg" >
-                                        <br>
-                                        <b id="TName">Mr Adnan </b>
+                                        <div id="agent3">
+                                            Agent Based
+                                            <BR>
+                                            Software Engineering
+                                            <br>
+                                            
+                                           CT-406
+                                           <img src="6BIMG/adnan 3.jpg" >
+                                            <br>
+                                            <b id="TName">Mr Adnan </b>
+                        
+                        
+                                        </div>
                                  
                                  
                                              </td>
@@ -544,6 +585,60 @@ img:hover
     </table>   
     <br>
     <br>
+
+
+    <script>
+        function myFunctionAI() {
+          var x = document.getElementById("agent1");
+          var y= document.getElementById("agent2");
+          var z= document.getElementById("agent3");
+          if (x.style.display === "none") 
+          {
+            x.style.display = "block";
+            y.style.display = "block";
+            z.style.display = "block";
+          } 
+          else
+           {
+            x.style.display = "none";
+            y.style.display = "none";
+            z.style.display = "none";
+
+
+          }
+        }
+
+        function myFunctionAgent() {
+          var x = document.getElementById("AI1");
+          var y= document.getElementById("AI2");
+          var z= document.getElementById("AI3");
+          if (x.style.display === "none") 
+          {
+            x.style.display = "block";
+            y.style.display = "block";
+            z.style.display = "block";
+          } 
+          else
+           {
+            x.style.display = "none";
+            y.style.display = "none";
+            z.style.display = "none";
+
+
+          }
+        }
+
+        function myFunctionboth() 
+        {
+            myFunctionAI();
+            myFunctionAgent();
+
+        }
+
+
+
+
+        </script>
 
 
 </body>
