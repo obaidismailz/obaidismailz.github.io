@@ -251,6 +251,8 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     padding-left: 160px;
   }
+
+ 
 }
 #hero:before {
   content: "";
@@ -304,6 +306,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #hero {
+    height: auto;
   }
 }
 
