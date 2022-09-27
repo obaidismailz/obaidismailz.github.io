@@ -2,11 +2,10 @@
             function (quotedata) {
                 console.log(quotedata);
                 var qodtitle = "Quote Of the Day: ";
-             //   var credits = "   (Sherry) ";
+      
                 qodtitle = qodtitle.bold();
-                credits = credits.bold();
-                // qodtitle = qodtitle.italics();
-                var quotestr = qodtitle + quotedata.contents.quotes[0].quote + credits;
+            
+                var quotestr = qodtitle + quotedata.contents.quotes[0].quote ;
                 console.log(quotestr);
                 
                 $('.qod').append(quotestr.italics());
